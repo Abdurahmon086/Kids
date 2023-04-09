@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finsweet Register</title>
+    <link rel="stylesheet" href="../bootstrap/bootstrap.min.css">
+    <style>
+
+    .headerRegistr {
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.formRegistr {
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.form-validation span {
+    color: rgb(182, 36, 36);
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-weight: 600;
+    visibility: hidden;
+}
+
+.form-validation.error span {
+    visibility: visible;
+}
+    </style>
+
+</head>
+
+<body>
+   
+
+
+    <div class="container">
+        <header class="headerRegistr">
+
+            <h1 class=" ">Registr</h1>
+
+            <form class="formRegistr form mt-0">
+                <div class="form-validation">
+                    <input type="text" class="firstName form-input form-control text-dark fw-bolder border-secondary" placeholder="First name" aria-label="Example text with button addon" aria-describedby="button-addon1" style="height: 45px;">
+                    <span class="errorMessage">Error message</span>
+                </div>
+                <div class="form-validation">
+                    <input type="text" class="lastName form-input form-control text-dark fw-bolder border-secondary" placeholder="Last name" aria-label="Example text with button addon" aria-describedby="button-addon1" style="height: 45px;">
+                    <span class="errorMessage">Error message</span>
+                </div>
+                <div class="form-validation">
+                    <input type="text" class="userName form-input form-control text-dark fw-bolder border-secondary" placeholder="Username" aria-label="Example text with button addon" aria-describedby="button-addon1" style="height: 45px;">
+                    <span class="errorMessage">Error message</span>
+                </div>
+                <div class="form-validation">
+                    <input type="text" class="password form-input form-control text-dark fw-bolder border-secondary" placeholder="Password" aria-label="Example text with button addon" aria-describedby="button-addon1" style="height: 45px;">
+                    <span class="errorMessage">Error message</span>
+                </div>
+                <div class="form-validation">
+                    <input type="text" class="confirmPass form-input form-control text-dark fw-bolder border-secondary" placeholder="Confirm Password" aria-label=" Example text with button addon " aria-describedby="button-addon1 " style="height: 45px;">
+                    <span class="errorMessage">Error message</span>
+                </div>
+                <button type="button " class="registrBtn btn btn-warning fw-bolder fs-5 text-body" style="height: 50px;">Register</button>
+
+
+            </form>
+        </header>
+    </div>
+
+
+
+
+
+
+    <script src="../Bootstrap/bootstrap.js "></script>
+    <script src="../Java Script/registr.js"></script>
+
+</body>
+
+</html>

@@ -1,4 +1,4 @@
-"use strict";
+
 const wordsEasy = [
   { id: 1, word: "chocolate" },
   { id: 2, word: "banana" },
@@ -136,4 +136,4 @@ const translateHardWord = [
     { id: 58, word: "Begona" },
     { id: 59, word: "Aqildan ozish" },
     { id: 60, word: "Ahmoq" },
-  ];
+];
