@@ -61,4 +61,5 @@ function check() {
         ifSuccess(confirmP);
     }
     form.reset();
+    window.location.href = "./index.html";
 }

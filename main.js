@@ -5,9 +5,15 @@ const elEngWordsWrapper = document.querySelector(".main-words");
 const elUzWordsWrapper = document.querySelector(".uz-words");
 const gameWrapper = document.querySelector(".game");
 const elTimer = document.querySelector(".time");
+const btnLogout = document.querySelector(".btn-logout");
 
 let deadline,
   count = 0;
+
+
+  btnLogout.addEventListener("click",(evt)=>{
+    window.location.href = "./registr.hmtl";
+  })
 
 
   let scoreArr = [];
