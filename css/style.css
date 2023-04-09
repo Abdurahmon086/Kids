@@ -350,7 +350,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 100vh;
   margin: 0;
   padding: 0;
   font-family: "Arial", sans-serif;
@@ -365,6 +365,24 @@ body {
 img {
   display: block;
   height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul, li, a {
+  list-style-type: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* STICKY FOOTER */
@@ -407,45 +425,37 @@ img {
 
 main {
   background: linear-gradient(107.86deg, #879AF2 1.88%, #D3208B 51.96%, #FDA000 100%);
+  height: 100%;
 }
-
-.hero {
-  width: 100vw;
-  height: 100vh;
-}
-.hero__inner {
+main .hero__inner {
   display: flex;
   flex-direction: column;
   align-items: center;
   row-gap: 22px;
-  width: 85%;
-  height: 85%;
   padding: 12px 0 42px;
   margin: 42px auto;
   border-radius: 34px;
   background: linear-gradient(217.72deg, #F453A2 7.16%, #8D18F3 89.56%);
 }
-.hero-title {
+main .hero-title {
   color: #26DE81;
   font-weight: bolder;
   font-size: 68px;
 }
-.hero-levels {
+main .hero-levels {
   display: flex;
-  flex-direction: column;
   gap: 42px;
   align-items: center;
   list-style-type: none;
-  padding: 44px 86px;
-  width: 420px;
+  padding: 34px 76px;
   background: linear-gradient(107.86deg, #42E695 1.88%, #3BB2B8 100%);
   border-radius: 20px;
 }
-.hero-level {
+main .hero-level {
   width: 220px;
   height: 42px;
 }
-.hero-level__easy {
+main .hero-level__easy {
   width: 100%;
   height: 100%;
   background: #FF8F4B !important;
@@ -456,7 +466,7 @@ main {
   letter-spacing: 1.5px;
   font-family: "Rubic Pixels";
 }
-.hero-level__medium {
+main .hero-level__medium {
   width: 100%;
   height: 100%;
   background: linear-gradient(217.72deg, #F34BC8 7.16%, #B82AB2 89.56%) !important;
@@ -466,7 +476,7 @@ main {
   font-size: 18px;
   letter-spacing: 1.5px;
 }
-.hero-level__hard {
+main .hero-level__hard {
   width: 100%;
   height: 100%;
   background: linear-gradient(217.72deg, #FD5D65 7.16%, #EE0C87 89.56%) !important;
@@ -475,4 +485,36 @@ main {
   font-weight: 500;
   font-size: 18px;
   letter-spacing: 1.5px;
+}
+main .game__wrapper {
+  display: flex;
+  background: #e26767;
+  border-radius: 15px;
+}
+main .game__wrapper .main-words {
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 100%;
+  gap: 30px;
+  border-right: 1px solid #FF8F4B;
+  align-items: center;
+  justify-items: center;
+}
+main .game__wrapper .uz-words {
+  gap: 30px;
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+  height: 100%;
+}
+main .game__btn {
+  padding: 10px 30px;
+  border-radius: 20%;
+  background: yellowgreen;
+}
+main .game__item {
+  padding: 10px 20px;
 }/*# sourceMappingURL=style.css.map */

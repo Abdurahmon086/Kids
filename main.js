@@ -27,21 +27,21 @@ function randomWords(engWords, uzWords) {
   indexArr.forEach((item) => {
     wordsArr.push([engWords[item - 1], uzWords[item - 1]]);
   });
-  return [wordsArr, indexArr];
+  return wordsArr;
 }
 
-function renderWords([arr, indexArr]) {
+function renderWords(arr) {
   elEngWordsWrapper.innerHTML = "";
   elUzWordsWrapper.innerHTML = "";
 
-  arr.forEach((item,index) => {
+  arr.forEach((item) => {
     const html = `
-        <li class="hero-level" style="transform: rotate(${indexArr[index]}deg) transform: translate(${indexArr[index]}px)">
-            <button class="btn hero-level__easy" dataset-id=${item[0].id}>${item[0].word}</button>
+        <li class="game__item" >
+            <button class="btn game__btn" dataset-id=${item[0].id}>${item[0].word}</button>
         </li>`;
     const html2 = `
-        <li class="hero-level"  style="transform: rotate(-${indexArr[index]}deg) transform: translate(-${indexArr[index]}px)">
-            <button class="btn hero-level__easy" dataset-id=${item[1].id}>${item[1].word}</button>
+        <li class="game__item"  >
+            <button class="btn game__btn" dataset-id=${item[1].id}>${item[1].word}</button>
         </li>`;
     elEngWordsWrapper.insertAdjacentHTML("afterbegin", html);
     elUzWordsWrapper.insertAdjacentHTML("afterbegin", html2);
