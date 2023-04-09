@@ -350,7 +350,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 100vh;
   margin: 0;
   padding: 0;
   font-family: "Arial", sans-serif;
@@ -367,6 +367,24 @@ img {
   height: auto;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul, li, a {
+  list-style-type: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
 /* STICKY FOOTER */
 .site-main {
   flex-grow: 1;
@@ -380,6 +398,132 @@ img {
 .container {
   margin: 0 auto;
   padding: 0 15px;
-  max-width: 1024px;
+  max-width: 1340px;
   width: 100%;
+}
+
+.header {
+  background: linear-gradient(17.72deg, #FD5D65 7.16%, #EE0C87 89.56%);
+}
+.header .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 14px;
+  width: 100%;
+  height: 82px;
+}
+.header-buttons {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 45%;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+
+main {
+  background: linear-gradient(107.86deg, #879AF2 1.88%, #D3208B 51.96%, #FDA000 100%);
+  height: 100%;
+}
+main .disable-word {
+  opacity: 0.8;
+}
+main .hero__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 22px;
+  padding: 12px 0 42px;
+  margin: 42px auto;
+  border-radius: 34px;
+  background: linear-gradient(217.72deg, #F453A2 7.16%, #8D18F3 89.56%);
+}
+main .hero-title {
+  color: #26DE81;
+  font-weight: bolder;
+  font-size: 68px;
+}
+main .hero-levels {
+  display: flex;
+  gap: 42px;
+  align-items: center;
+  list-style-type: none;
+  padding: 34px 76px;
+  background: linear-gradient(107.86deg, #42E695 1.88%, #3BB2B8 100%);
+  border-radius: 20px;
+}
+main .hero-level {
+  width: 220px;
+  height: 42px;
+}
+main .hero-level__easy {
+  width: 100%;
+  height: 100%;
+  background: #FF8F4B !important;
+  border-radius: 14px !important;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  font-family: "Rubic Pixels";
+}
+main .hero-level__medium {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(217.72deg, #F34BC8 7.16%, #B82AB2 89.56%) !important;
+  border-radius: 14px !important;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+}
+main .hero-level__hard {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(217.72deg, #FD5D65 7.16%, #EE0C87 89.56%) !important;
+  border-radius: 14px !important;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+}
+main .game {
+  display: none;
+}
+main .game__wrapper {
+  display: flex;
+  background: #e26767;
+  border-radius: 15px;
+}
+main .game__wrapper .main-words {
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 100%;
+  gap: 30px;
+  border-right: 1px solid #FF8F4B;
+  align-items: center;
+  justify-items: center;
+}
+main .game__wrapper .uz-words {
+  gap: 30px;
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+  height: 100%;
+}
+main .game__btn {
+  padding: 10px 30px;
+  border-radius: 20%;
+  background: rgb(179, 241, 55);
+}
+main .game__btn:hover {
+  background: #09ff3f;
+}
+main .game__item {
+  padding: 10px 20px;
 }/*# sourceMappingURL=style.css.map */
