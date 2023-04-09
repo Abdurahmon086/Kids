@@ -427,6 +427,9 @@ main {
   background: linear-gradient(107.86deg, #879AF2 1.88%, #D3208B 51.96%, #FDA000 100%);
   height: 100%;
 }
+main .disable-word {
+  opacity: 0.8;
+}
 main .hero__inner {
   display: flex;
   flex-direction: column;
@@ -486,6 +489,9 @@ main .hero-level__hard {
   font-size: 18px;
   letter-spacing: 1.5px;
 }
+main .game {
+  display: none;
+}
 main .game__wrapper {
   display: flex;
   background: #e26767;
@@ -513,7 +519,10 @@ main .game__wrapper .uz-words {
 main .game__btn {
   padding: 10px 30px;
   border-radius: 20%;
-  background: yellowgreen;
+  background: rgb(179, 241, 55);
+}
+main .game__btn:hover {
+  background: #09ff3f;
 }
 main .game__item {
   padding: 10px 20px;

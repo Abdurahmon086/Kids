@@ -89,7 +89,7 @@ const wordsEasy = [
     { id: 16, word: "Quyosh" },
     { id: 17, word: "Eski" },
     { id: 18, word: "Park" },
-    { id: 19, word: "Salom" },
+    { id: 19, word: "Salom(do'stona)" },
     { id: 20, word: "Hayr" },
   ];
   

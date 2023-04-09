@@ -2,6 +2,10 @@ main {
     background: linear-gradient(107.86deg, #879AF2 1.88%, #D3208B 51.96%, #FDA000 100%);
     height: 100%;
 
+    .disable-word{
+        opacity: 0.8;
+    }
+
     .hero {
 
         &__inner {
@@ -72,6 +76,7 @@ main {
     }
 
     .game {
+        display: none;
         &__wrapper {
             display: flex;
             background: #e26767;
@@ -103,7 +108,11 @@ main {
         &__btn {
             padding: 10px 30px;
             border-radius: 20%;
-            background: yellowgreen;
+            background: rgb(179, 241, 55);
+
+            &:hover{
+                background: #09ff3f;
+            }
         }
 
         &__item {
