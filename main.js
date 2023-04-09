@@ -111,17 +111,4 @@ elGame.addEventListener("click", (e) => {
       });
     }
   }
-
-
-  // if (e.target.classList.contains('game__btn')) {
-  //   const id = e.target.getAttribute('data-id');
-  //   click2 = true
-  //   gameId2 = id;
-  // }
-
-  // if (click1 === true && click2 === true) {
-  //   if (gameId1 == gameId2) {
-  //     console.log('sad');
-  //   }
-  // }
 });
